@@ -4,7 +4,11 @@
  * Module dependencies.
  */
 
+<<<<<<< HEAD
 let app = require('./app');
+=======
+let app = require('./server/config/app');
+>>>>>>> 969b78a (crud added)
 let debug = require('debug')('group-project:server');
 const http = require('http');
 
