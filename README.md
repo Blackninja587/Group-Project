@@ -4,3 +4,4 @@ INFR-3120-Web &amp; Script Programming Group Project
 Team members include:
 <br>Samuel Brangman: 100741732
 <br>Sebastian Carneiro: 1007998391
+<br>Joshua Emmanuel: 100755423
