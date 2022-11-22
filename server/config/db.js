@@ -1,4 +1,17 @@
-module.exports = 
+// Defines the variables, pulling mongoose from node_modules and puling my mongoDB database from the url
+const mongoose = require('mongoose')
+const url = `mongodb+srv://admin:BlackNinjafiveeightseven@base-cluster.nnrhjs8.mongodb.net/?retryWrites=true&w=majority`;
+
+// Pulls connection to the MongoDB Atlas database
+mongoose.connect(url)
+    .then( () => {
+        console.log('Connected to MongoDB Atlas')
+    })
+    .catch( (err) => {
+        console.error(`Error connecting to the database. n${err}`);
+    });
+
+    module.exports = 
 {
-    "URI": "mongodb://localhost/bookStore"
+    'URI': `mongodb+srv://admin:BlackNinjafiveeightseven@base-cluster.nnrhjs8.mongodb.net/?retryWrites=true&w=majority`
 }
