@@ -21,7 +21,7 @@ module.exports.displayBookList = (req,res,next)=>{
 }
 
 module.exports.displayAddPage = (req,res,next)=>{
-    res.render('book/add',{title:'Add Bookd'})
+    res.render('book/add',{title:'Add Books'})
 }
 
 module.exports.processAddPage = (req,res,next)=>{
