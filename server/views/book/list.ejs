@@ -26,11 +26,11 @@
     <!-- repeat template -->
     <% for(let count=0; count < Booklist.length; count++) { %>
         <tr class="d-flex">
-            <td class="text-center col-2"><%= Booklist[count].name %></td>
-            <td class="text-center col-2"><%= Booklist[count].author %></td>
-            <td class="text-center col-1"><%= Booklist[count].published %></td>
-            <td class="text-center col-5"><%= Booklist[count].description %></td>
-            <td class="text-center col-1"><%= Booklist[count].price %></td>
+            <td class="text-center col-2"><%= Booklist[count].course_name %></td>
+            <td class="text-center col-2"><%= Booklist[count].due_date %></td>
+            <td class="text-center col-1"><%= Booklist[count].grade_achieved %></td>
+            <td class="text-center col-5"><%= Booklist[count].total_points %></td>
+            <td class="text-center col-1"><%= Booklist[count].comment %></td>
             <td class="text-center col-1">
                 <a href="/book-list/edit/<%= Booklist[count]._id %>"
                     class="btn btn-success">
