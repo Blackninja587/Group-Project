@@ -13,48 +13,48 @@
                     <input type="text" class="form-control"
                     id="nameTextField"
                     placeholder="Enter the Course Name"
-                    name="name" 
-                    value="<%= book.name %>"
+                    name="course_name" 
+                    value="<%= book.course_name %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="authorTextField">Author</label>
+                    <label for="authorTextField">Due Date</label>
                     <input type="text" class="form-control"
                     id="authorTextField"
-                    placeholder="Enter the Authors name"
-                    name="author" 
-                    value="<%= book.author %>"
+                    placeholder="Enter the Due Date"
+                    name="due_date" 
+                    value="<%= book.due_date %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Year</label>
+                    <label for="publishedTextField">Grade Achieved</label>
                     <input type="text" class="form-control"
                     id="publishedTextField"
-                    placeholder="Enter the Year of publication"
-                    name="published" 
-                    value="<%= book.published %>"
+                    placeholder="Enter the grade achieved"
+                    name="grade_achieved" 
+                    value="<%= book.grade_achieved %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="descTextField">Description</label>
+                    <label for="descTextField">Total Points</label>
                     <textarea type="text" class="form-control"
                     id="descTextField"
-                    placeholder="Enter the Book Description of the book"
-                    name="description" required>
-                    <%= book.description %>
+                    placeholder="Enter the total points of the assignment"
+                    name="total_points" required>
+                    <%= book.total_points %>
                     </textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="priceTextField">Price</label>
+                    <label for="priceTextField">Comment</label>
                     <input type="number" class="form-control"
                     id="priceTextField"
-                    placeholder="Enter the Books price"
-                    name="price" 
-                    value="<%= book.price %>"
+                    placeholder="Enter a comment"
+                    name="comment" 
+                    value="<%= book.comment %>"
                     required>
                 </div>
                     <br>
