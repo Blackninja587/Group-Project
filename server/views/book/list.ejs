@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-offset-3 col-md-10">
             <h1><%= title %></h1>
-            <a href="/book-list/add" class="btn btn-primary" role="button">
+            <a href="/grade-list/add" class="btn btn-primary" role="button">
                 <i class="fas fa-plus-circle"></i> Add a Book
             </a>
             <br>
@@ -32,12 +32,12 @@
             <td class="text-center col-5"><%= Booklist[count].total_points %></td>
             <td class="text-center col-1"><%= Booklist[count].comment %></td>
             <td class="text-center col-1">
-                <a href="/book-list/edit/<%= Booklist[count]._id %>"
+                <a href="/grade-list/edit/<%= Booklist[count]._id %>"
                     class="btn btn-success">
                     <i class="fas fa-pencil-alt"></i> Edit </a>
             </td>
             <td class="text-center col-1">
-                <a href="/book-list/delete/<%= Booklist[count]._id %>"
+                <a href="/grade-list/delete/<%= Booklist[count]._id %>"
                     class="btn btn-danger">
                     <i class="fas fa-trash-alt"></i> Delete </a>
             </td>
