@@ -1,0 +1,28 @@
+#PROJECT PLAN 
+
+The page we are currently in the process of making is a grades page which will include:
+
+Homepage
+Grade List Page
+ 
+The Homepage would consist of page which has a 
+
+An introduction page 
+Demo video of how this page works
+an image related to Homework
+
+
+The Grade list page would consist of a list of grades that a student would receive. The table consists of a Course Name, Due Date, Score ,Out of and comment section. There will also be an edit and add button to add grades and edit submitted grades.The list page also features of delete button if user requires to remove a grade
+
+The CSS
+
+The Homepage
+
+Image related to Homework 
+Demo Video which will autoplay 
+Navigation bar with symbol related to the Page (using font awesome)
+
+
+List Page
+
+List page designed with bootstrap  
