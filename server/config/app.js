@@ -23,7 +23,7 @@ mongoDB.once('open', ()=> {
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let booksRouter = require('../routes/book'); //change the Router and File
+let gradesRouter = require('../routes/grade'); //change the Router and File
 
 let app = express();
 
@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter); // localhost:3000
 app.use('/users', usersRouter); // localhost:3000/users
-app.use('/book-list', booksRouter); // change the router 
+app.use('/grade-list', gradesRouter); // change the router 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
