@@ -18,8 +18,8 @@
         <th class="text-center col-2">Course Name</th>
         <th class="text-center col-2">Due Date</th>
         <th class="text-center col-1">Grade Achieveds</th>
-        <th class="text-center col-4">Total Points</th>
-        <th class="text-center col-1">Comment</th>
+        <th class="text-center col-2">Total Points</th>
+        <th class="text-center col-3">Comment</th>
         <th class="text-center col-1"></th>
         <th class="text-center col-1"></th>
     </tr>
@@ -29,8 +29,8 @@
             <td class="text-center col-2"><%= Gradelist[count].course_name %></td>
             <td class="text-center col-2"><%= Gradelist[count].due_date %></td>
             <td class="text-center col-1"><%= Gradelist[count].grade_achieved %></td>
-            <td class="text-center col-4"><%= Gradelist[count].total_points %></td>
-            <td class="text-center col-1"><%= Gradelist[count].comment %></td>
+            <td class="text-center col-2"><%= Gradelist[count].total_points %></td>
+            <td class="text-center col-3"><%= Gradelist[count].comment %></td>
             <td class="text-center col-1">
                 <a href="/grade-list/edit/<%= Gradelist[count]._id %>"
                     class="btn btn-success">
