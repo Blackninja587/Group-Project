@@ -2,9 +2,6 @@
 (function(){
     function Start()
     {
-<<<<<<< HEAD
-        console.log("App Started");
-=======
         console.log("App started");
         let deleteButtons = document.querySelectorAll('.btn-danger');
         for(button of deleteButtons)
@@ -17,7 +14,6 @@
                 }
             });
         }
->>>>>>> 969b78a (crud added)
     }
     window.addEventListener("load", Start);
 })();
