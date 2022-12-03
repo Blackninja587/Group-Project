@@ -15,14 +15,18 @@ module.exports.displayGradeList = (req,res,next)=>{
         {
             res.render('grade/list',{
                 title:'Grades',
-                Gradelist: gradelist
+                Gradelist: gradelist,
+                displayName: req.user ? req.user.displayName:''
             })
         }
     });
 }
 
 module.exports.displayAddPage = (req,res,next)=>{
-    res.render('grade/add',{title:'Add Grades'})
+    res.render('grade/add',{
+        title:'Add Grades',
+        displayName: req.user ? req.user.displayName:''
+    })
 }
 
 module.exports.processAddPage = (req,res,next)=>{
@@ -56,7 +60,11 @@ module.exports.displayEditPage = (req,res,next)=>{
         }
         else
         {
-            res.render('grade/edit',{title:'Edit Grade', grade:gradeToEdit});
+            res.render('grade/edit',{
+                title:'Edit Grade',
+                grade:gradeToEdit,
+                displayName: req.user ? req.user.displayName:''
+            });
         }
     });
 }

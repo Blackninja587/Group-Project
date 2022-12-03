@@ -1,4 +1,5 @@
 // IIFE --> Immediately invoked function expression
+let button
 (function(){
     function Start()
     {
