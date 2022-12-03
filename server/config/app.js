@@ -34,6 +34,9 @@ app.use(session({
 
 app.use(flash());
 
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 
 let indexRouter = require('../routes/index');
