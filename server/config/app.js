@@ -5,6 +5,12 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
+let session = require('express-session');
+let passport = require('passport);
+let passportLocal = require('passport-local');
+let localStrategy = passportLocal.Strategy;
+let flash = require(conect-flash);
+
 
 // config mongodb
 let mongoose = require('mongoose');
