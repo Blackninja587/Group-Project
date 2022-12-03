@@ -26,6 +26,15 @@ mongoDB.once('open', ()=> {
   console.log('connected to the MongoDB');
 });
 
+app.use(session({
+  secret:"SomeSecret",
+  saveUninitialized:false,
+  resave:false
+}))
+
+app.use(flash());
+
+
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
