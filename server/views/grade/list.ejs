@@ -8,13 +8,16 @@
     <div class="row">
         <div class="col-md-offset-3 col-md-10">
             <h1><%= title %></h1>
-            <a href="/grade-list/add" class="btn btn-primary" role="button">
-                <i class="fas fa-plus-circle"></i> Add a Grade
-            </a>
+            <% if(typeof displayName=='string' && displayName) { %>
+                <a href="/grade-list/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle"></i> Add a Grade
+                </a>
             <br>
+            <% } %>
             <br>
     <table class="table table-bordered table-striped table-hover">
     <tr class="d-flex"> 
+    <% if(typeof displayName=='string' && displayName) { %>
         <th class="text-center col-2">Course Name</th>
         <th class="text-center col-2">Due Date</th>
         <th class="text-center col-1">Grade Achieveds</th>
@@ -22,10 +25,18 @@
         <th class="text-center col-3">Comment</th>
         <th class="text-center col-1"></th>
         <th class="text-center col-1"></th>
+        <% } else{ %>
+        <th class="text-center col-3">Course Name</th>
+        <th class="text-center col-2">Due Date</th>
+        <th class="text-center col-1">Grade Achieveds</th>
+        <th class="text-center col-2">Total Points</th>
+        <th class="text-center col-4">Comment</th>
+        <% } %>
     </tr>
     <!-- repeat template -->
     <% for(let count=0; count < Gradelist.length; count++) { %>
         <tr class="d-flex">
+        <% if(typeof displayName=='string' && displayName) { %>
             <td class="text-center col-2"><%= Gradelist[count].course_name %></td>
             <td class="text-center col-2"><%= Gradelist[count].due_date %></td>
             <td class="text-center col-1"><%= Gradelist[count].grade_achieved %></td>
@@ -41,6 +52,13 @@
                     class="btn btn-danger">
                     <i class="fas fa-trash-alt"></i> Delete </a>
             </td>
+        <% } else{ %>
+            <td class="text-center col-3"><%= Gradelist[count].course_name %></td>
+            <td class="text-center col-2"><%= Gradelist[count].due_date %></td>
+            <td class="text-center col-1"><%= Gradelist[count].grade_achieved %></td>
+            <td class="text-center col-2"><%= Gradelist[count].total_points %></td>
+            <td class="text-center col-4"><%= Gradelist[count].comment %></td>
+        <% } %>
         </tr>
     <% } %>
     </table>
