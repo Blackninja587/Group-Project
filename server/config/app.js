@@ -9,7 +9,7 @@ let session = require('express-session');
 let passport = require('passport');
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
-let flash = require(connect-flash);
+let flash = require('connect-flash');
 let app = express();
 
 // create a user model instance
@@ -90,5 +90,4 @@ app.use(function(err, req, res, next) {
   );
 });
 
-passport.use(Strategy);
 module.exports = app;
