@@ -8,6 +8,7 @@ router.get('/', indexController.displayHomePage);
 
 router.get('/home', indexController.displayHomePage);
 
+// Get router for login page
 router.get('/login',indexController.displayLoginPage);
 //post router for login page
 router.post('/login',indexController.processLoginPage);
