@@ -8,3 +8,4 @@ INFR-3120-Web &amp; Script Programming Group Project- Canvas Program
 <br>
 <br>Repository Name: https://github.com/Blackninja587/INFR-3120-Group-Project
 <br>Website Link: http://infr-3120-group-project.azurewebsites.net/
+<br>Youtube Viedo: https://youtu.be/PeeQEclTZIs (a better quality verison has been emailed to the professor)
