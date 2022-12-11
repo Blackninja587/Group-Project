@@ -38,4 +38,4 @@ router.post('/edit/:id',requireAuth, gradeController.processEditPage);
 router.get('/delete/:id',requireAuth,gradeController.performDelete);
 
 
-module.exports=router;
+module.exports = router;
