@@ -5,6 +5,10 @@ main {
     padding: 0px;
 }
 
+h1{
+    margin-left: 50%;
+}
+
 /* centering the img */
 .imgCenter{
     display: block;
