@@ -1,7 +1,7 @@
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00008b;">
     <div class="container-fluid">
-    <a class="navbar-brand" href="/">Group Project</a>
+    <a class="navbar-brand" href="/"><h5>Canvas Program</h5></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,15 +18,17 @@
             <i class="fa-solid fa-house-chimney"></i>Home</a> 
         </li>
 
+        <!-- Grades Page Tab -->
         <li class="nav-item">
             <% if (title == "Grades") { %>
               <a class="nav-link active" href="/grade-list">
             <% } else { %>
               <a class="nav-link" href="/grade-list">
             <% } %>
-              <i class="fa-solid fa-lg fa-book"></i> Grades</a>
+              <i class="fa-solid fa-lg fa-book"></i>Grades</a>
         </li>
 
+        <!-- Login/Logout Tab -->
         <% if(typeof displayName =='string' && displayName) { %>
             <li class="navbar-text">
             <i class="fas fa-lg fa-user"></i>

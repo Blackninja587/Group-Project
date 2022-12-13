@@ -2,15 +2,10 @@
 <%- include partials/main_nav.ejs %>
 <!-- Main Content -->
 <main>
-  <div class= "jumbotron jumbotron-fluid">
-    <div class= "container">
-      <h1 class= "display-4"><%= title %> Page</h1>
-    </div>
-  </div>
   <div class = "titles">
-  <% if (title == "Home" || title == "") { %>
-  <%- include partials/Home.ejs %>
-  <% } %>
+    <% if (title == "Home" || title == "") { %>
+    <%- include partials/Home.ejs %>
+    <% } %>
   </div>
 </main>
 <%- include partials/bottom_nav.ejs %>

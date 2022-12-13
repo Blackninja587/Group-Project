@@ -8,9 +8,37 @@ main {
 /* centering the img */
 .imgCenter{
     display: block;
-    margin-top: 3%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
     height: auto;
+    border: 7px solid #ff8c00;
+    border-radius: 20px;
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color: darkblue;
+}
+
+.nav-link {
+    color: #ff8c00;
+}
+
+.navbar-brand h5{
+    color: darkorange;
+}
+
+.fa-solid.fa-house-chimney {
+    color: darkorange;
+}
+
+.fa-solid.fa-lg.fa-book {
+    color: darkorange;
+}
+
+.table.table-bordered {
+    color: white;
+    background-color: darkblue;
+    border: 7px solid black;
 }
