@@ -1,47 +1,46 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00008b;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><h5>Canvas Program</h5></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <div class="container-fluid">
+    <a class="navbar-brand mb-xlg" href="/"><h5>Group Project<h5></a>
+    <button class="navbar-toggler" typebutton" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto">
 
         <!-- Home Page Tab -->
         <li class="nav-item">
         <% if (title == "Home") { %>
             <a class="nav-link active" href="/home">
         <% } else { %>
-            <a class="nav-link" href="/home">
+            <a class="nav-link" style="color: #ff8c00;" href="/home">
         <% } %>
-            <i class="fa-solid fa-house-chimney"></i>Home</a> 
+            <i class="fa-solid fa-house-chimney"></i> Home</a> 
         </li>
 
-        <!-- Grades Page Tab -->
         <li class="nav-item">
             <% if (title == "Grades") { %>
               <a class="nav-link active" href="/grade-list">
             <% } else { %>
-              <a class="nav-link" href="/grade-list">
+              <a class="nav-link" style="color: #ff8c00;" href="/grade-list">
             <% } %>
-              <i class="fa-solid fa-lg fa-book"></i>Grades</a>
+              <i class="fa-solid fa-lg fa-book"></i> Grades</a>
         </li>
 
-        <!-- Login/Logout Tab -->
         <% if(typeof displayName =='string' && displayName) { %>
-            <li class="navbar-text">
-            <i class="fas fa-lg fa-user"></i>
+            <li class="navbar-text" style="color: #ff8c00;">
+            <i class="fas fa-lg fa-user" style="color: #ff8c00;"></i>
             Welcome, <%= displayName %> </li>
             <li class="nav-item">
-            <a class="nav-link" href="/logout">
-            <i class="fa-solid fa-lg fa-sign-out-alt"></i>Logout</a></li>
+            <a class="nav-link" style="color: #ff8c00;" href="/logout">
+            <i class="fa-solid fa-lg fa-sign-out-alt"></i> Logout</a></li>
           <% } else{ %>
             <li class="nav-item">
-            <a class="nav-link" href="/login">
-            <i class="fa-solid fa-lg fa-sign-in-alt"></i>Login</a></li>
+            <a class="nav-link" style="color: #ff8c00;" href="/login">
+            <i class="fa-solid fa-lg fa-sign-in-alt"></i> Login</a></li>
           <% } %>
-      </ul>
+          
+        </ul>
     </div>
-  </div>
+    </div>
 </nav>

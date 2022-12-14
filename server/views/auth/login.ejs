@@ -9,9 +9,9 @@
     </div>
     <% } %>
 
-    <div class="row">
+    <div class="row-login">
         <div class="offset-md-4 col-md-4">
-            <h1>Please login</h1>
+            <div class="login-page"><h1>Please login</h1></div>
             <form method="post" autocomplete="off">
                 <fieldset class="form-group">
                     <label for="username"></label>
@@ -26,14 +26,16 @@
                     name="password" 
                     placeholder="Enter password"
                     id="password" required>
+                    <br>
                     or
                     <a href="/register">Register Here</a>
                 </fieldset>
+                <br>
                 <fieldset class="form-group text-right">
-                    <input type="submit" class="btn btn-success"
+                    <input type="submit" style="float: right;" class="btn btn-success"
                     value="Login">
-                    <a href="/"></a>
-                        <input type="button" class="btn btn-warning" value="Cancel">
+                    <a href="/">
+                        <input type="button" style="float: left;" class="btn btn-warning" value="Cancel">
                     </a>
                 </fieldset>
             </form>
